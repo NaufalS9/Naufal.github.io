@@ -1,0 +1,58 @@
+/* General reset for the HTML and body */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  color: #333; /* Default text color */
+  overflow: hidden; /* Prevents overflow of the page */
+}
+
+/* Styling for div containers */
+div, iframe, object {
+  display: block;
+  width: 100%;
+  border: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Styling for iframe elements */
+iframe {
+  height: 90%;
+  border-radius: 8px; /* Adds rounded corners to the iframe */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the iframe */
+}
+
+/* Flex layout for divs (aligned items in a row or column) */
+div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px; /* Added padding for spacing */
+  background-color: white; /* White background for content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for the div */
+  border-radius: 10px; /* Rounded corners for the div */
+  margin: 20px auto; /* Center the div and add margin around it */
+  width: 80%; /* Limit the width to 80% of the container */
+}
+
+/* Styling for links */
+a {
+  color: #007BFF; /* Primary blue color for links */
+  text-decoration: none; /* Removes the underline */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Styling for visited links */
+a:visited {
+  color: #0056b3; /* Darker blue for visited links */
+}
+
+/* Hover effects for links */
+a:hover {
+  color: #ff5733; /* Bright red color on hover */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Adds a shadow effect to the text */
+  transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition on hover */
+}
